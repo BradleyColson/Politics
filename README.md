@@ -4,7 +4,7 @@
 Analyzed 52,000 rows of political donor data using MySQL from [https://www.fec.gov/data/](https://www.fec.gov/data/browse-data/?tab=bulk-data) , specifcally individual donors or entities
 
 
-The top 10 donors
+### The top 10 donors
 
 | Contributor | Employer | Occupation | Amount |
 | :--- | :--- | :--- | :--- |
