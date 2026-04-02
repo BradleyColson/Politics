@@ -33,6 +33,10 @@ The Top 10 funding hot spots geographically
 | **CA** | SAN FRANCISCO | $230,306 | $719.71 |
 | **TN** | KNOXVILLE | $200,332 | $1,804.79 |
 
+
+<img width="1917" height="741" alt="Political_Donations" src="https://github.com/user-attachments/assets/bab755ab-a53e-4ede-a3b3-be4dc4344547" />
+
+
 Donor distribution
 
 
