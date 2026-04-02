@@ -58,9 +58,14 @@ This table represents a segmented analysis of **51,523** individual contribution
 * **The "Donation Gap":** There is a significant drop-off in the **Large ($1001-$2900)** category, suggesting donors typically remain in the grassroots tier or jump directly to the maximum allowable contribution.
 * **Data Integrity:** All values were cleaned and validated using SQL `STR_TO_DATE` and `DECIMAL` casting after resolving legacy encoding issues from the raw FEC source files.
 
+### Key Data Insights
+Grassroots Strength: 70% of all contributors fall into the Small ($0-$199) bracket, showing a broad base of support.
 
+Top-Heavy Funding: The Max/High group contains only 1% of the total number of donors but accounts for roughly 35% of the total funds raised.
 
-Technical Process (ETL)
+Engagement Gap: There is a noticeable "valley" in the Large ($1001-$2900) bracket, suggesting that donors are either casual contributors or "all-in" maximum donors, with very few in between.
+
+### Technical Process (ETL)
 A significant portion of this project involved overcoming "dirty data" challenges common in legacy government datasets:
 
 Encoding Fixes: Resolved UTF-8 BOM and Windows-specific line ending issues using PowerShell to ensure 100% data ingestion into MySQL.
@@ -69,10 +74,7 @@ Schema Design: Developed a flexible staging table using BIGINT and VARCHAR to pr
 
 Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDDYYYY strings into ISO-standard SQL DATE objects for time-series readiness.
 
-Key Data Insights
-Grassroots Strength: 70% of all contributors fall into the Small ($0-$199) bracket, showing a broad base of support.
 
-Top-Heavy Funding: The Max/High group contains only 1% of the total number of donors but accounts for roughly 35% of the total funds raised.
 
-Engagement Gap: There is a noticeable "valley" in the Large ($1001-$2900) bracket, suggesting that donors are either casual contributors or "all-in" maximum donors, with very few in between.
+
 
