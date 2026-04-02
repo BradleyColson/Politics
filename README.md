@@ -19,7 +19,7 @@ The top 10 donors
 | **IBEW PAC Educational Fund** | N/A | N/A | $100,000 |
 | **Palmedo, Alana** | Paradigm | Managing Partner | $100,000 |
 
-The Top 10 funding hot spots geographically
+### The Top 10 funding hot spots geographically
 | State | City | Total State Funds | Average Donation |
 | :--- | :--- | :--- | :--- |
 | **VA** | SPRINGFIELD | $1,002,367 | $55,687.06 |
@@ -37,7 +37,7 @@ The Top 10 funding hot spots geographically
 <img width="1917" height="741" alt="Political_Donations" src="https://github.com/user-attachments/assets/bab755ab-a53e-4ede-a3b3-be4dc4344547" />
 
 
-Donor distribution
+### Donor distribution
 
 
 
