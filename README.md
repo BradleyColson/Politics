@@ -53,7 +53,7 @@ This table represents a segmented analysis of **51,523** individual contribution
 
 ---
 
-#### **Analytical Insights**
+### **Analytical Insights**
 * **Volume vs. Value:** While the **Small ($0-$199)** bracket accounts for **70.5%** of all individual donations, the **Max/High** bracket (less than 1% of donors) contributed a nearly identical total dollar amount.
 * **The "Donation Gap":** There is a significant drop-off in the **Large ($1001-$2900)** category, suggesting donors typically remain in the grassroots tier or jump directly to the maximum allowable contribution.
 * **Data Integrity:** All values were cleaned and validated using SQL `STR_TO_DATE` and `DECIMAL` casting after resolving legacy encoding issues from the raw FEC source files.
