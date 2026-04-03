@@ -87,6 +87,16 @@ Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDD
 
 Use MySQL to discover deep blue voter areas over 50% in New Hampshire Presidential Election 2020
 
+### Project Overview
+This project provides a comprehensive data analysis of the 2020 US Presidential Election results in New Hampshire at the precinct and jurisdictional levels. By leveraging SQL for data transformation and Tableau for visualization, the analysis identifies key voting trends, turnout drivers, and geographic shifts across the state’s 10 counties.
+
+Key Objectives
+Data Aggregation: Consolidate granular ward-level data into city and town-wide totals to assess large-scale jurisdictional impact.
+
+Margin Analysis: Calculate raw margins and percentage differentials to identify Democratic strongholds (e.g., Hanover, Durham) and Republican-leaning growth areas (e.g., Salem, Derry).
+
+Performance Benchmarking: Compare precinct-level engagement against state averages to highlight outliers in voter participation.
+
 | City / Town | County | Leading Party | Total Votes |
 | :--- | :--- | :--- | :--- |
 | **MANCHESTER** | Hillsborough | Democrat | 52,606 |
@@ -111,12 +121,6 @@ Top Democratic areas by margin 2020 Presidential election.
 | **DURHAM** | 5,970 | 1,712 | 128 | 7,810 | 4,130 | +52.88% |
 | **LEBANON WARD 1** | 2,020 | 635 | 30 | 2,685 | 1,355 | +50.47% |
 
-### Project Overview
-This project provides a comprehensive data analysis of the 2020 US Presidential Election results in New Hampshire at the precinct and jurisdictional levels. By leveraging SQL for data transformation and Tableau for visualization, the analysis identifies key voting trends, turnout drivers, and geographic shifts across the state’s 10 counties.
 
-Key Objectives
-Data Aggregation: Consolidate granular ward-level data into city and town-wide totals to assess large-scale jurisdictional impact.
 
-Margin Analysis: Calculate raw margins and percentage differentials to identify Democratic strongholds (e.g., Hanover, Durham) and Republican-leaning growth areas (e.g., Salem, Derry).
 
-Performance Benchmarking: Compare precinct-level engagement against state averages to highlight outliers in voter participation.
