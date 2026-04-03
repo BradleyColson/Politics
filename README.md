@@ -8,6 +8,30 @@
 
 Analyzed 52,000 rows of political donor data using MySQL from [https://www.fec.gov/data/](https://www.fec.gov/data/browse-data/?tab=bulk-data) , specifcally individual donors or entities.
 
+Project Overview
+This project analyzes the financial landscape of the 2020 election cycle in New Hampshire, focusing on high-value donations, donor demographics, and institutional funding sources. By auditing over $3.5M in top-tier contributions, the analysis identifies the primary economic drivers behind political campaigning and provides a transparent look at the professional backgrounds of major stakeholders.
+
+Key Objectives
+Donor Stratification: Identify and rank top contributors by total volume, distinguishing between individual private citizens and institutional entities (PACs and Foundations).
+
+Professional Mapping: Standardize and categorize "Employer" and "Occupation" data to determine which industries (Finance, Law, Healthcare) exert the most financial influence.
+
+Financial Transparency: Audit the distribution of funds to ensure data integrity and highlight the balance between local "Grassroots" funding and out-of-state institutional support.
+
+Technical Implementation
+SQL Data Modeling: Developed complex queries to aggregate donation totals, handling data inconsistencies such as varying name formats (e.g., "Last, First" vs "First Last") and missing employer fields.
+
+Feature Engineering: Created logic to group donors into categories (Retired, Self-Employed, Corporate) to provide a more granular view of the funding base.
+
+Optimization: Streamlined large-scale financial datasets into high-density Markdown tables for executive-level reporting and stakeholder review.
+
+Core Findings
+Institutional Heavyweights: Organizations like the Forward Movement Foundation and Portage Capital LLC accounted for over $1.5M in single-entry contributions, highlighting a concentration of wealth at the institutional level.
+
+The "Retired" Influence: A significant percentage of high-value individual donors identified as "Retired," suggesting that personal wealth preservation and legacy are primary motivators for local political spending.
+
+Sector Dominance: Professional services—specifically Wealth Management (JP Morgan) and Tech Operations (Paradigm)—emerged as the most active corporate backgrounds for individual high-net-worth donors.
+
 
 
 
