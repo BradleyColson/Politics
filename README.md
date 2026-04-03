@@ -1,5 +1,5 @@
-# Politics
-### Project: Political Contribution Analysis (FEC)
+
+# Project: Political Contribution Analysis (FEC)
 
 Analyzed 52,000 rows of political donor data using MySQL from [https://www.fec.gov/data/](https://www.fec.gov/data/browse-data/?tab=bulk-data) , specifcally individual donors or entities
 
