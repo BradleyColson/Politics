@@ -1,7 +1,8 @@
 - [Political_Contribution](#Political_Contribution)
+  
 - [Voting](#Voting)
 
-# Contribution
+# Political_Contribution
 
 # Project: Political Contribution Analysis (FEC)
 
