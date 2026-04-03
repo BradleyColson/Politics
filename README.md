@@ -82,6 +82,8 @@ Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDD
 
 # Voting
 
+Use MySQL to discover deep blue voter areas in New Hampshire Presidential Election 2020. 
+
 | City / Town | County | Leading Party | Total Votes |
 | :--- | :--- | :--- | :--- |
 | **MANCHESTER** | Hillsborough | Democrat | 52,606 |
@@ -94,3 +96,14 @@ Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDD
 | **MERRIMACK** | Hillsborough | Democrat | 16,697 |
 | **LONDONDERRY** | Rockingham | Republican | 15,873 |
 | **BEDFORD** | Hillsborough | Democrat | 14,739 |
+
+Top Democratic areas by margin 2020 Presidential election.
+
+| Precinct | Dem_Votes | Rep_Votes | Lib_Votes | Total_Votes | Raw_Margin | Dem_Margin_% |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **HANOVER** | 6,210 | 841 | 66 | 7,117 | 5,303 | +74.51% |
+| **LYME** | 1,074 | 218 | 13 | 1,305 | 843 | +64.60% |
+| **PORTSMOUTH WARD 2** | 2,645 | 699 | 49 | 3,393 | 1,897 | +55.91% |
+| **PORTSMOUTH WARD 5** | 2,207 | 623 | 27 | 2,857 | 1,557 | +54.50% |
+| **DURHAM** | 5,970 | 1,712 | 128 | 7,810 | 4,130 | +52.88% |
+| **LEBANON WARD 1** | 2,020 | 635 | 30 | 2,685 | 1,355 | +50.47% |
