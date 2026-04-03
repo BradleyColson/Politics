@@ -1,4 +1,4 @@
-- [Contribution](#Contribution)
+- [Political Contribution](#Political Contribution)
 - [Voting](#Voting)
 
 # Contribution
