@@ -81,6 +81,7 @@ Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDD
 
 
 # Voting
+### Analyzising voter turn out for 2020 Presidential election in New Hampshire
 
 Use MySQL to discover deep blue voter areas in New Hampshire Presidential Election 2020. 
 
