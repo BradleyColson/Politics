@@ -82,14 +82,15 @@ Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDD
 
 # Voting
 
-Rank	City/Town	Total Votes	Dem Votes	Rep Votes	Lib Votes	Margin (%)
-1	Manchester	52,606	29,464	22,127	1,015	+12.02%
-2	Nashua	45,281	26,770	17,806	705	+18.24%
-3	Concord	23,868	15,511	7,983	374	+29.97%
-4	Dover	19,185	12,508	6,331	346	+30.39%
-5	Derry	17,894	8,215	9,412	267	-8.18%
-6	Salem	17,841	7,638	9,969	234	-14.38%
-7	Rochester	16,845	8,132	8,367	346	-3.45%
-8	Merrimack	16,697	8,725	7,669	303	+4.51%
-9	Londonderry	15,873	7,738	7,905	230	-2.50%
-10	Bedford	14,739	7,521
+| City / Town | County | Leading Party | Total Votes |
+| :--- | :--- | :--- | :--- |
+| **MANCHESTER** | Hillsborough | Democrat | 52,606 |
+| **NASHUA** | Hillsborough | Democrat | 45,281 |
+| **CONCORD** | Merrimack | Democrat | 23,868 |
+| **DOVER** | Strafford | Democrat | 19,185 |
+| **DERRY** | Rockingham | Republican | 17,894 |
+| **SALEM** | Rockingham | Republican | 17,841 |
+| **ROCHESTER** | Strafford | Republican | 16,845 |
+| **MERRIMACK** | Hillsborough | Democrat | 16,697 |
+| **LONDONDERRY** | Rockingham | Republican | 15,873 |
+| **BEDFORD** | Hillsborough | Democrat | 14,739 |
