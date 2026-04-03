@@ -6,7 +6,9 @@
 
 # Project: Political Contribution Analysis (FEC)
 
-Analyzed 52,000 rows of political donor data using MySQL from [https://www.fec.gov/data/](https://www.fec.gov/data/browse-data/?tab=bulk-data) , specifcally individual donors or entities
+Analyzed 52,000 rows of political donor data using MySQL from [https://www.fec.gov/data/](https://www.fec.gov/data/browse-data/?tab=bulk-data) , specifcally individual donors or entities.
+
+
 
 
 ### The Top 10 donors
@@ -108,3 +110,13 @@ Top Democratic areas by margin 2020 Presidential election.
 | **PORTSMOUTH WARD 5** | 2,207 | 623 | 27 | 2,857 | 1,557 | +54.50% |
 | **DURHAM** | 5,970 | 1,712 | 128 | 7,810 | 4,130 | +52.88% |
 | **LEBANON WARD 1** | 2,020 | 635 | 30 | 2,685 | 1,355 | +50.47% |
+
+### Project Overview
+This project provides a comprehensive data analysis of the 2020 US Presidential Election results in New Hampshire at the precinct and jurisdictional levels. By leveraging SQL for data transformation and Tableau for visualization, the analysis identifies key voting trends, turnout drivers, and geographic shifts across the state’s 10 counties.
+
+Key Objectives
+Data Aggregation: Consolidate granular ward-level data into city and town-wide totals to assess large-scale jurisdictional impact.
+
+Margin Analysis: Calculate raw margins and percentage differentials to identify Democratic strongholds (e.g., Hanover, Durham) and Republican-leaning growth areas (e.g., Salem, Derry).
+
+Performance Benchmarking: Compare precinct-level engagement against state averages to highlight outliers in voter participation.
