@@ -1,3 +1,7 @@
+- [Contribution](#Contribution)
+- [Voting](#Voting)
+
+# Contribution
 
 # Project: Political Contribution Analysis (FEC)
 
@@ -75,6 +79,6 @@ Schema Design: Developed a flexible staging table using BIGINT and VARCHAR to pr
 Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDDYYYY strings into ISO-standard SQL DATE objects for time-series readiness.
 
 
-
+# Voting
 
 
