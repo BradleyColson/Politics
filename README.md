@@ -109,16 +109,7 @@ The University Factor: My analysis confirmed that university towns are the bigge
 
 The Battlegrounds: I found that while the big cities (Manchester/Nashua) are blue, mid-sized towns like Merrimack and Bedford are the real "purple" areas where the margins were razor-thin (under 5%).
 
-(Insert your Tables here)
 
-Why this version looks less "AI":
-First-Person Voice: Using "I wanted," "I found," and "My takeaway" makes it a personal project, not a generic report.
-
-Focus on Friction: AI rarely talks about "UTF-8 BOM" or "line ending issues." Mentioning the specific technical headaches you had to fix (like the PowerShell part) is a huge "Human Proof" signal.
-
-Conversational Headings: Instead of "Key Objectives," I used "The Goal" or "The Challenge."
-
-Specific Observations: Instead of saying "Geographic shifts were identified," you say "I found that university towns are the biggest outliers."
 
 | City / Town | County | Leading Party | Total Votes |
 | :--- | :--- | :--- | :--- |
