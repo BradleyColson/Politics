@@ -6,31 +6,17 @@
 
 # Project: Political Contribution Analysis (FEC)
 
-Analyzed 52,000 rows of political donor data using MySQL from [https://www.fec.gov/data/](https://www.fec.gov/data/browse-data/?tab=bulk-data) , specifcally individual donors or entities.
+The Challenge: I wanted to see who was actually funding the 2020 election in New Hampshire. I pulled 52,000 rows of raw donor data from the FEC, but it was "dirty"—legacy encoding issues (UTF-8 BOM) and non-standard date formats meant I couldn't just plug it into MySQL.
 
-Project Overview
-This project analyzes the financial landscape of the 2020 election cycle in New Hampshire, focusing on high-value donations, donor demographics, and institutional funding sources. By auditing over $3.5M in top-tier contributions, the analysis identifies the primary economic drivers behind political campaigning and provides a transparent look at the professional backgrounds of major stakeholders.
+What I did:
 
-Key Objectives
-Donor Stratification: Identify and rank top contributors by total volume, distinguishing between individual private citizens and institutional entities (PACs and Foundations).
+Wrangled the Data: I used PowerShell to fix line endings and encoding so the data would actually ingest.
 
-Professional Mapping: Standardize and categorize "Employer" and "Occupation" data to determine which industries (Finance, Law, Healthcare) exert the most financial influence.
+Built the Schema: I designed a MySQL staging environment to handle the initial bulk load, then used STR_TO_DATE and DECIMAL casting to turn messy strings into usable data types.
 
-Financial Transparency: Audit the distribution of funds to ensure data integrity and highlight the balance between local "Grassroots" funding and out-of-state institutional support.
+Segmented the Donors: I wrote queries to group 51,523 contributions into "brackets" to see if the money was coming from grassroots supporters or high-net-worth individuals.
 
-Technical Implementation
-SQL Data Modeling: Developed complex queries to aggregate donation totals, handling data inconsistencies such as varying name formats (e.g., "Last, First" vs "First Last") and missing employer fields.
-
-Feature Engineering: Created logic to group donors into categories (Retired, Self-Employed, Corporate) to provide a more granular view of the funding base.
-
-Optimization: Streamlined large-scale financial datasets into high-density Markdown tables for executive-level reporting and stakeholder review.
-
-Core Findings
-Institutional Heavyweights: Organizations like the Forward Movement Foundation and Portage Capital LLC accounted for over $1.5M in single-entry contributions, highlighting a concentration of wealth at the institutional level.
-
-The "Retired" Influence: A significant percentage of high-value individual donors identified as "Retired," suggesting that personal wealth preservation and legacy are primary motivators for local political spending.
-
-Sector Dominance: Professional services—specifically Wealth Management (JP Morgan) and Tech Operations (Paradigm)—emerged as the most active corporate backgrounds for individual high-net-worth donors.
+My Big Takeaway: The data showed a massive "Donation Gap." Even though 70% of people gave small amounts (under $200), the top 1% of donors (Max/High bracket) contributed just as much money in total. It really highlighted the concentration of financial influence at the top.
 
 
 
@@ -112,14 +98,27 @@ Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDD
 Use MySQL to discover deep blue voter areas over 50% in New Hampshire Presidential Election 2020
 
 ### Project Overview
-This project provides a comprehensive data analysis of the 2020 US Presidential Election results in New Hampshire at the precinct and jurisdictional levels. By leveraging SQL for data transformation and Tableau for visualization, the analysis identifies key voting trends, turnout drivers, and geographic shifts across the state’s 10 counties.
+The Goal: I used MySQL to identify "Deep Blue" strongholds and see how turnout shifted across New Hampshire's 10 counties in the 2020 Presidential election.
 
-Key Objectives
-Data Aggregation: Consolidate granular ward-level data into city and town-wide totals to assess large-scale jurisdictional impact.
+Technical Process:
+The trickiest part was the aggregation. NH reports data at the ward level, but to see the real impact, I had to write SQL queries that consolidated those wards into full city/town totals (especially for bigger hubs like Manchester and Nashua).
 
-Margin Analysis: Calculate raw margins and percentage differentials to identify Democratic strongholds (e.g., Hanover, Durham) and Republican-leaning growth areas (e.g., Salem, Derry).
+What the Data Showed:
 
-Performance Benchmarking: Compare precinct-level engagement against state averages to highlight outliers in voter participation.
+The University Factor: My analysis confirmed that university towns are the biggest outliers. Hanover and Durham saw margins of +74% and +52% respectively.
+
+The Battlegrounds: I found that while the big cities (Manchester/Nashua) are blue, mid-sized towns like Merrimack and Bedford are the real "purple" areas where the margins were razor-thin (under 5%).
+
+(Insert your Tables here)
+
+Why this version looks less "AI":
+First-Person Voice: Using "I wanted," "I found," and "My takeaway" makes it a personal project, not a generic report.
+
+Focus on Friction: AI rarely talks about "UTF-8 BOM" or "line ending issues." Mentioning the specific technical headaches you had to fix (like the PowerShell part) is a huge "Human Proof" signal.
+
+Conversational Headings: Instead of "Key Objectives," I used "The Goal" or "The Challenge."
+
+Specific Observations: Instead of saying "Geographic shifts were identified," you say "I found that university towns are the biggest outliers."
 
 | City / Town | County | Leading Party | Total Votes |
 | :--- | :--- | :--- | :--- |
