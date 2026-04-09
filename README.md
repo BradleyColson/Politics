@@ -1,5 +1,7 @@
 # Political Contribution Analysis 2020 Election (FEC)
 
+Finding the top donors and donor citiies using SQL.
+
 Identified a massive "Donation Gap" where the top 1% of donors matched the total output of the bottom 70% of grassroots supporters.
 
 Key Insights
