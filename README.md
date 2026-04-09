@@ -1,22 +1,15 @@
-- [Political_Contribution](#Political_Contribution)
-  
-- [Voting](#Voting)
-
 # Political_Contribution
 
 # Project: Political Contribution Analysis (FEC)
 
-The Challenge: I wanted to see who was actually funding the 2020 election in New Hampshire. I pulled 52,000 rows of raw donor data from the FEC, but it was "dirty"—legacy encoding issues (UTF-8 BOM) and non-standard date formats meant I couldn't just plug it into MySQL.
+Identified a massive "Donation Gap" where the top 1% of donors matched the total output of the bottom 70% of grassroots supporters.
 
-What I did:
+Key Insights
+Grassroots vs. Elite: Small-dollar donors ($0–$199) make up 70.5% of volume (36k+ donations) but were financially equaled by just 530 high-net-worth individuals.
 
-Wrangled the Data: I used PowerShell to fix line endings and encoding so the data would actually ingest.
+The "Donor Valley": Data revealed a significant drop-off in the $1k–$2.9k bracket, suggesting donors are either casual contributors or "all-in" maximum donors.
 
-Built the Schema: I designed a MySQL staging environment to handle the initial bulk load, then used STR_TO_DATE and DECIMAL casting to turn messy strings into usable data types.
-
-Segmented the Donors: I wrote queries to group 51,523 contributions into "brackets" to see if the money was coming from grassroots supporters or high-net-worth individuals.
-
-My Big Takeaway: The data showed a massive "Donation Gap." Even though 70% of people gave small amounts (under $200), the top 1% of donors (Max/High bracket) contributed just as much money in total. It really highlighted the concentration of financial influence at the top.
+Geographic Hotspots: Isolated Springfied, VA and Encino, CA as top funding hubs, despite the analysis focusing on New Hampshire influence.
 
 
 
@@ -54,10 +47,6 @@ My Big Takeaway: The data showed a massive "Donation Gap." Even though 70% of pe
 <img width="1917" height="741" alt="Political_Donations" src="https://github.com/user-attachments/assets/bab755ab-a53e-4ede-a3b3-be4dc4344547" />
 
 
-### Donor distribution
-
-
-
 #### **Donor Contribution Distribution**
 This table represents a segmented analysis of **51,523** individual contributions, identifying the relationship between donation volume and total financial impact.
 
@@ -70,26 +59,16 @@ This table represents a segmented analysis of **51,523** individual contribution
 
 ---
 
-### **Analytical Insights**
-* **Volume vs. Value:** While the **Small ($0-$199)** bracket accounts for **70.5%** of all individual donations, the **Max/High** bracket (less than 1% of donors) contributed a nearly identical total dollar amount.
-* **The "Donation Gap":** There is a significant drop-off in the **Large ($1001-$2900)** category, suggesting donors typically remain in the grassroots tier or jump directly to the maximum allowable contribution.
-* **Data Integrity:** All values were cleaned and validated using SQL `STR_TO_DATE` and `DECIMAL` casting after resolving legacy encoding issues from the raw FEC source files.
+### Technical Workflow (ETL)
+Challenge: 52,000 rows of "dirty" FEC data with legacy encoding (UTF-8 BOM) and non-standard dates.
 
-### Key Data Insights
-Grassroots Strength: 70% of all contributors fall into the Small ($0-$199) bracket, showing a broad base of support.
+Wrangling: Used PowerShell to fix line endings and encoding, ensuring 100% data ingestion.
 
-Top-Heavy Funding: The Max/High group contains only 1% of the total number of donors but accounts for roughly 35% of the total funds raised.
+Schema Design: Built a MySQL staging environment using BIGINT and VARCHAR to prevent data truncation during bulk loads.
 
-Engagement Gap: There is a noticeable "valley" in the Large ($1001-$2900) bracket, suggesting that donors are either casual contributors or "all-in" maximum donors, with very few in between.
+Data Transformation: Applied STR_TO_DATE and DECIMAL casting to convert messy strings into analysis-ready types.
 
-### Technical Process (ETL)
-A significant portion of this project involved overcoming "dirty data" challenges common in legacy government datasets:
 
-Encoding Fixes: Resolved UTF-8 BOM and Windows-specific line ending issues using PowerShell to ensure 100% data ingestion into MySQL.
-
-Schema Design: Developed a flexible staging table using BIGINT and VARCHAR to prevent data loss during the initial LOAD DATA INFILE process.
-
-Data Transformation: Utilized STR_TO_DATE functions to convert non-standard MMDDYYYY strings into ISO-standard SQL DATE objects for time-series readiness.
 
 
 
