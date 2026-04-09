@@ -57,7 +57,7 @@ This table represents a segmented analysis of **51,523** individual contribution
 
 ---
 
-### Technical Workflow (ETL)
+### Technical Workflow (ETL) - Using Gemini
 Challenge: 52,000 rows of "dirty" FEC data with legacy encoding (UTF-8 BOM) and non-standard dates.
 
 Wrangling: Used PowerShell to fix line endings and encoding, ensuring 100% data ingestion.
